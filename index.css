@@ -1,0 +1,148 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+}
+body {
+  margin: 0;
+  background-color: #3b3b3b;
+}
+header {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  justify-content: flex-start;
+}
+.logo_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: white;
+  position: fixed;
+}
+.logo_container .logo_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logo_span {
+  font-size: 20px;
+}
+.Container_links {
+  position: fixed;
+  right: 20px;
+}
+.header_ul {
+  gap: 20px;
+}
+.header_ul_li a {
+  color: white;
+}
+section {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+#brief {
+  display: flex;
+
+  color: white;
+  height: 500px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#brief .infos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#brief span {
+  width: 200px;
+  height: 2px;
+  display: block;
+  background-color: white;
+}
+
+#brief .me {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.Me_div {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  height: 100%;
+}
+#Latest_work {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  height: 500px;
+  gap: 3%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#Latest_work .header_Letest {
+  position: absolute;
+  margin-bottom: 10px;
+}
+#Latest_work .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+}
+#Latest_work .cards {
+  background-color: white;
+
+  display: flex;
+
+  gap: 3%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#Latest_work .title {
+  margin-bottom: 39px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+#Connect {
+  background-color: white;
+  height: 100px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+#Connect .Socials {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+#Connect .Socials a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+i {
+  font-size: 30px;
+}
+#Connect .title span {
+  font-size: 30px;
+}
