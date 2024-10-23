@@ -4,6 +4,9 @@
   list-style-type: none;
   font-weight: 600;
 }
+a:hover {
+  color: blueviolet;
+}
 
 ul {
   display: flex;
@@ -14,9 +17,13 @@ body {
 }
 header {
   display: flex;
+  margin-top: 15px;
   margin-left: 20px;
   margin-bottom: 100px;
   justify-content: flex-start;
+}
+header .list_icon {
+  visibility: hidden;
 }
 .logo_container {
   display: flex;
@@ -54,7 +61,6 @@ section {
   color: white;
   height: 500px;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 #brief .infos {
   width: 50%;
@@ -88,9 +94,9 @@ section {
   background-color: white;
   margin-top: 30px;
   display: flex;
-  height: 500px;
+  height: auto;
   gap: 3%;
-  flex-direction: column;
+
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -102,15 +108,25 @@ section {
   width: 30%;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 30%;
   align-items: center;
+  gap: 10px;
+  text-align: center;
+  border-radius: 5%;
+  background-color: #3b3b3b;
+  padding: 10px;
+  color: white;
+}
+#Latest_work .card img {
+  width: 100%;
+  height: 75%;
 }
 #Latest_work .cards {
   background-color: white;
-
+  height: auto;
   display: flex;
-
-  gap: 3%;
+  margin-top: 10px;
+  gap: 5px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -145,4 +161,38 @@ i {
 }
 #Connect .title span {
   font-size: 30px;
+}
+
+@media (max-width: 646px) {
+  .Container_links {
+    top: 47px;
+    background-color: black;
+    padding-right: 10px;
+    border-radius: 5%;
+    visibility: hidden;
+  }
+  .Container_links ul {
+    flex-direction: column;
+  }
+
+  header .list_icon {
+    position: fixed;
+    right: 20px;
+    visibility: visible;
+  }
+
+    #brief {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  #Latest_work .cards .card {
+    width: 40%;
+  }
+}
+@media (min-width: 777px){
+#Latest_work .cards .card{
+  height: 40%;
+}
 }

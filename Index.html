@@ -25,13 +25,17 @@
         </a>
         <span class="logo_span">Mostafa Waheed</span>
       </div>
-      <div class="Container_links">
-        <ul class="header_ul">
+      <div class="Container_links" id="Container_links">
+      
+        <ul class="header_ul" id="header_ul">
           <li class="header_ul_li"><a href="#brief">Brief</a></li>
           <li class="header_ul_li"><a href="#Latest_work">Latest Work</a></li>
           <li class="header_ul_li"><a href="#Connect">Conntact With Me</a></li>
         </ul>
+       
       </div>
+      <span class="list_icon" id="list_icon"><i class="fa-solid fa-bars"></i></span>
+      
     </header>
     <section id="brief">
       <div class="infos">
@@ -101,5 +105,16 @@
       </div>
     </section>
     <footer></footer>
+    <script>
+        document.getElementById('list_icon').addEventListener('click', function() {
+          var element = document.getElementById('Container_links');
+            if (element.style.visibility === 'hidden') {
+                element.style.visibility = 'visible';
+            } else {
+                element.style.visibility = 'hidden';
+            }
+           
+        });
+    </script>
   </body>
 </html>
