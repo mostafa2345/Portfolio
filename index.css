@@ -16,11 +16,16 @@ body {
   background-color: #3b3b3b;
 }
 header {
+  position: fixed;
   display: flex;
+  align-items: center;
   margin-top: 15px;
   margin-left: 20px;
   margin-bottom: 100px;
   justify-content: flex-start;
+  top: 0px;
+  width: 100vw;
+  height: 50px;
 }
 header .list_icon {
   visibility: hidden;
@@ -40,6 +45,7 @@ header .list_icon {
 }
 .logo_span {
   font-size: 20px;
+  color: black;
 }
 .Container_links {
   position: fixed;
@@ -49,7 +55,7 @@ header .list_icon {
   gap: 20px;
 }
 .header_ul_li a {
-  color: white;
+  color: black;
 }
 section {
   margin-left: 20px;
@@ -81,6 +87,9 @@ section {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+.infos img {
+  width: 10vw;
 }
 .Me_div {
   width: 50%;
@@ -171,6 +180,9 @@ i {
     border-radius: 5%;
     visibility: hidden;
   }
+  .header_ul_li a {
+    color: white;
+  }
   .Container_links ul {
     flex-direction: column;
   }
@@ -181,18 +193,19 @@ i {
     visibility: visible;
   }
 
-    #brief {
+  #brief {
     flex-direction: column;
     align-items: center;
     height: auto;
+    margin-top: 100px;
   }
 
   #Latest_work .cards .card {
     width: 40%;
   }
 }
-@media (min-width: 777px){
-#Latest_work .cards .card{
-  height: 40%;
-}
+@media (min-width: 777px) {
+  #Latest_work .cards .card {
+    height: 40%;
+  }
 }

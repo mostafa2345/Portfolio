@@ -18,7 +18,7 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="logo_container">
         <a href="/Index.html">
           <img class="logo_img" src="/assets/logo.png" alt="logo" />
@@ -115,6 +115,14 @@
             }
            
         });
+          window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            if (window.scrollY > 100) { // Adjust the scroll value to trigger the change
+                header.style.backgroundColor = '#ff6f61'; // Change to any color you like
+            } else {
+                header.style.backgroundColor = 'transparent'; // Default color
+            }
+          });
     </script>
   </body>
 </html>
